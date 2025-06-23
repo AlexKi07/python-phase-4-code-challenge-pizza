@@ -1,7 +1,8 @@
-from models import Restaurant, RestaurantPizza, Pizza
-from app import app, db
+from server.app import create_app
+from server.models import db, Restaurant, Pizza, RestaurantPizza
 from faker import Faker
 
+app = create_app()
 
 class TestApp:
     '''Flask application in app.py'''

@@ -1,7 +1,9 @@
 import pytest
-from app import app
-from models import db, Restaurant, Pizza, RestaurantPizza
+from server.app import create_app
+from server.models import db, Restaurant, Pizza, RestaurantPizza
 from faker import Faker
+
+app = create_app()
 
 
 class TestRestaurantPizza:
